@@ -55,6 +55,7 @@ const startDeleteMovieHandler = (movieId) => {
 	let confirmDeletionButton = deleteMovieModal.querySelector('.btn--danger');
 
 	confirmDeletionButton.replaceWith(confirmDeletionButton.cloneNode(true));
+	// 여러번 cancel 클릭하고 삭제시 오류발생 방지
 
 	confirmDeletionButton = deleteMovieModal.querySelector('.btn--danger');
 
